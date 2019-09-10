@@ -27,3 +27,6 @@ Project Directories:
 `themes`: Themes to change the way Drupal looks
 
 Included version of Drupal: 8.7.3
+
+## License
+MIT
