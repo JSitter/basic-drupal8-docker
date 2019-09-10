@@ -22,6 +22,8 @@ Configure Drupal using the same database configuration as listed in the docker-c
 
 ## Version 1.0
 Project Directories:
+Certain directories have been made available as volumes in order to view changes to developed projects. These folders will be mounted to the appropriate directories in the Drupal installation.
+
 `modules`: Include modules to install into Drupal
 `profiles`: Scripts to setup profiles
 `themes`: Themes to change the way Drupal looks
