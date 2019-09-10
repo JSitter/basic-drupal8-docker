@@ -1,6 +1,6 @@
 # Basic Dockerized Drupal 8 Project
 
-This project uses Docker to configure the required dependencies to run Drupal 8. Any themes, profiles, or modules should be placed inside the project's themes, modules, and profiles directory. These directories will be mounted as volumes.
+This project allows for the ease of module, profile, and theme development by allowing Docker to take care of running and configuring Apache and MySql. Any themes, profiles, or modules should be placed inside this project's themes, modules, and profiles directory. These directories will be mounted as volumes.
 
 ## Installation
 
