@@ -16,6 +16,13 @@ services:
     build: .
     ports:
      - 8083:80
+    volumes:
+    - themes:/var/www/html/themes/
+    - profiles:/var/www/html/profiles/
+    - modules:/var/www/html/modules
 
 volumes:
   mysql:
+  themes:
+  profiles:
+  modules:
