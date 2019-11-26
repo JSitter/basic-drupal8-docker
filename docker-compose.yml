@@ -3,10 +3,10 @@ services:
   mysql:
     image: mysql:5.7
     environment:
+      MYSQL_DATABASE: app
+      MYSQL_USER: web
+      MYSQL_PASSWORD: pass
       MYSQL_ROOT_PASSWORD: secret_passs
-      MYSQL_DATABASE: app_db
-      MYSQL_USER: php_web
-      MYSQL_PASSWORD: devp@ss
     expose:
         - "3306"
     volumes:
@@ -20,6 +20,7 @@ services:
     - ./themes:/app/themes
     - ./profiles:/app/profiles
     - ./modules:/app/modules
+    - ./sites:/app/sites
 
 volumes:
   mysql:
