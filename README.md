@@ -66,7 +66,7 @@ It's recommended to change the default database credentials to those that aren't
 
 **IMPORTANT**
 
-**Before submitting the database credentials proceed to step 4**
+**Before submitting the database credentials proceed to step 5**
 
 ### 5. Set the Database Address
 The default value `localhost` won't work and is hidden in the `Advanced` section when filling in the database credentials.
