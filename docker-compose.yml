@@ -17,12 +17,9 @@ services:
     ports:
      - 8083:80
     volumes:
-    - themes:/var/www/html/themes/
-    - profiles:/var/www/html/profiles/
-    - modules:/var/www/html/modules
+    - ./themes:/app/themes
+    - ./profiles:/app/profiles
+    - ./modules:/app/modules
 
 volumes:
   mysql:
-  themes:
-  profiles:
-  modules:
