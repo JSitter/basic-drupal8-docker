@@ -11,14 +11,14 @@ This project uses Docker to manage the installation and configuration of Drupal'
 In the terminal navigate to `/sites/default/`
 
 ```
-$> cd ./sites/default/
+$ cd ./sites/default/
 ```
 Make a copy the file `default.settings.php` and dangerously set permissions to allow everyone read, write, and execute access.
 Drupal needs to make changes to this file when it initially starts to enforce permissions and database access. After completing the site setup process in the browser you will want to change this setting to a more reasonable one.
 
 ```
-$>  cp default.settings.php settings.php
-$>  chmod 777 settings.php
+$ cp default.settings.php settings.php
+$ chmod 777 settings.php
 ```
 
 ### 2. Build the project.
