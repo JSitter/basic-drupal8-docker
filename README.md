@@ -7,21 +7,7 @@ This project allows for the ease of module, profile, and theme development by al
 ### 0. Install Docker
 This project uses Docker to manage the installation and configuration of Drupal's dependencies. Make sure that Docker is installed on your host machine. Installation instructions can be found here: [Mac](https://docs.docker.com/v17.12/docker-for-mac/install/)  |  [Windows](https://docs.docker.com/docker-for-windows/install/)  |  [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
-### 1. Create settings.php
-In the terminal navigate to `/sites/default/`
-
-```
-$ cd ./sites/default/
-```
-Make a copy the file `default.settings.php` and dangerously set permissions to allow everyone read, write, and execute access.
-Drupal needs to make changes to this file when it initially starts to enforce permissions and database access. After completing the site setup process in the browser you will want to change this setting to a more reasonable one.
-
-```
-$ cp default.settings.php settings.php
-$ chmod 777 settings.php
-```
-
-### 2. Build the project.
+### 1. Build the project.
 
 In order to use this project it must be built in the terminal. 
 
@@ -33,7 +19,7 @@ $ docker-compose build
 
 The build step will take awhile as it configures the container to meet Drupal's requirements. Ideally this step is only necessary once -- unless of course the container is removed. Because this step creates a brand new Drupal installation, anytime this command is run you will run into Drupal's initial configuration setup because Drupal will need the database credentials again.
 
-### 3. Launch the projecct.
+### 2. Launch the projecct.
 
 Use:
 
@@ -47,7 +33,7 @@ Anytime you want to shutdown the container use `ctrl-c` to stop the process. Use
 
 You will be able to access the Drupal installation in your browser at `localhost:8083/`
 
-### 4. Set database credentials.
+### 3. Set database credentials.
 
 Visit `localhost:8083/` to set up Drupal.
 
@@ -66,13 +52,13 @@ It's recommended to change the default database credentials to those that aren't
 
 **IMPORTANT**
 
-**Before submitting the database credentials proceed to step 5**
+**Before submitting the database credentials proceed to step 4**
 
-### 5. Set the Database Address
+### 4. Set the Database Address
 The default value `localhost` won't work and is hidden in the `Advanced` section when filling in the database credentials.
 Because the database exists in a separate container this must be changed from `localhost` to `mysql`. This references the container's address in the docker network.
 
-### 6. Rejoice
+### 5. Rejoice
 Now you should be able to finish Drupal's setup sequence and enter in your site information. 
 After this, you should have a fully functional Drupal 8 installation without the need to install and configure php, apache, and mysql on your host machine. 
 
@@ -92,7 +78,7 @@ Certain directories have been made available as volumes in order to view changes
 
 `sites`: Site settings
 
-Included version of Drupal: 8.7.10
+Included version of Drupal: 8.8.2
 
 ## License
 MIT

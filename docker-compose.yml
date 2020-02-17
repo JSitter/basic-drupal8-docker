@@ -6,7 +6,7 @@ services:
       MYSQL_DATABASE: app
       MYSQL_USER: web
       MYSQL_PASSWORD: pass
-      MYSQL_ROOT_PASSWORD: secret_passs
+      MYSQL_ROOT_PASSWORD: root
     expose:
         - "3306"
     volumes:
