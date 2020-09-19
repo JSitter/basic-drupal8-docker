@@ -1,6 +1,9 @@
-# Basic Dockerized Drupal 8.9.3 Project
+# Basic Dockerized Drupal 8.9.6 Project
 
 This project allows for the ease of module, profile, and theme development by allowing Docker to take care of running and configuring Apache and MySql. Any themes, profiles, or modules should be placed inside this project's themes, modules, and profiles directory. These directories will be mounted as volumes.
+
+
+In order to run multiple Drupal projects one one machine simply rename the project directory from drupal_7_dockerized to the name of the project you're working on. Simply putting the project in another folder will not create a fresh Docker project.
 
 ## Installation
 
@@ -78,7 +81,7 @@ Certain directories have been made available as volumes in order to view changes
 
 `sites`: Site settings
 
-Included version of Drupal: 8.8.2
+Included version of Drupal: 8.9.6
 
 ## License
 MIT
